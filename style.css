@@ -3,15 +3,21 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background: url(https://winlancers.com/assets/img/slide2.jpg) no-repeat center center/cover;
-}
 #outer_div1{
     /* background: url(https://winlancers.com/assets/img/slide2.jpg) no-repeat center center/cover; */
     height: 100vh;
 }
+#b_img{
+    position: fixed;
+    background: url(https://winlancers.com/assets/img/slide2.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+/* This the nav bar */
 #nav{
-    
+    top: 0;
     /* border: 1px solid red; */
     width: 100%;
     height: 14vh;
@@ -27,7 +33,7 @@ body{
     /* border: 1px solid red; */
     width: 40vw;
     list-style: none;
-    color: white;
+    color: hsl(0, 0%, 100%);
     font-family: sans-serif;
     font-size: 3vh;
     display: flex;
@@ -37,9 +43,11 @@ body{
     transition: all;
     transition-duration: .4s;
     color: rgb(234, 234, 87);
-
 }
-#outer_div2
+/* nav bar is ended */
+
+
+#inner_div2
 {
     /* border: 2px solid red; */
     height: 70vh;
@@ -68,28 +76,31 @@ body{
 }
 #text>button{
     height:7vh;
-    width: 10vw;
+    width: 11vw;
     background-color: #4154f1;
     border-radius: 5px;
     color: antiquewhite;
-    font-size: 2vh;
-    box-shadow:0.1px 0.1px 100px 4px #4154f1 ;
+    font-size: 2.3vh;
+    letter-spacing: 1px;
+    box-shadow:0.1px 0.1px 100px 0px #4154f1 ;
     border: none;
-}
+    font-weight: 600;
+}    
 #text>button:hover{
     transition: all;
     transition-duration: 0.8s;
     border-radius: 2px;
 }
 
+/* this is the form */
 #form{
     padding: 2vh 3vh;
-    /* border: 1px solid rgb(42, 32, 192); */
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
     width: 28%;
     height: 55vh;
     align-self: center;
-    background: white;
-    background: transparent;
+    background-color: rgba(0,0,0,.4);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -102,13 +113,14 @@ body{
     justify-content: space-between;
 }
 input,textarea{
+    background-color: rgba(0,0,0,.4);
     outline: none;
     font-size: 2.4vh;
     font-family: sans-serif;
 }
 input,textarea:focus{
     border: 2px solid lightblue;
-    color: #343a40;
+    color: hsl(0, 6%, 85%);
     font-family: sans-serif;
 }
 .name_email{
@@ -137,8 +149,75 @@ textarea{
     font-size: 2.5vh;
     background-color: #FFC107;
     color: #fff;
+    border: none;
 }
-#hero{
-    border: 1px solid black;
-    height: 800px;
+/* form is ended */
+
+/* wave animation start */
+#wave-animation .wave{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: url(img/wave.png);
+    height: 100px;
+    width: 100%;
+    background-size: 1000px 100px;
+}
+
+#wave-animation .wave1{
+    animation: wave 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+#wave-animation .wave2{
+    animation: wave2 15s linear infinite;
+    z-index: 900;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+#wave-animation .wave3{
+    animation: wave 30s linear infinite;
+    z-index: 800;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+#wave-animation .wave4{
+    animation: wave2 5s linear infinite;
+    z-index: 700;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+@keyframes wave {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+@keyframes wave2 {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
+/* wave animation ended */
+
+#outer_div2{
+    border: 2px solid red;
+    height:100vh;
+    width: 100%;
+    background: white;
+}
+#main{
+    border: 2px solid green;
+    height: 80vh;
+    width: 80%;
 }
