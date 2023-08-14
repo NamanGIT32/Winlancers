@@ -6,6 +6,8 @@
     <title>Project Winlancers</title>
     <link rel="icon" href="img/winlancer-logo.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
     <div id="outer_div1">
@@ -15,11 +17,12 @@
                 <img id="logo" src="img/winlancer-logo.png">
             </div>
             <ul id="list">
-                <li>Home</li>
-                <li>About</li>
-                <li>Hire Developer</li>
-                <li>Careers</li>
-                <li>Contact</li>
+                <li class="list_items" onmouseover="change()">Home</li>
+                <li class="list_items">About</li>
+                <li class="list_items">Hire Developer</li>
+                <li class="list_items">Careers</li>
+                <li class="list_items">Contact</li>
+                <i class="ri-menu-3-line"></i>
             </ul>
         </nav>
         <div id="inner_div2">
@@ -55,13 +58,80 @@
         <div class="wave wave4"></div>
     </div>
 
-    <!-- <div id="outer_div2">
-        <div id="main">
+    <div id="main">
+        <section id="about_section">
+            <div id="content" class="bg">
+                <h2>About Winlancer</h2>
+                <p>A privately owned global company, we serve our global clientele from offices from Central India. Our customers range from small firms to SME across a wide array of industries around the world. With our more than 6 years of experience in building software and applications for web and mobile platforms, we have blazed a trail in this marketplace, because we don’t just offer the best-in-class technology solutions for your business but our experts ensure that these innovative solutions perfectly fit to your business needs.</p>
+                <h2>What We Do</h2>
+                <p>Website design and development, Mobile app development, Internet marketing and Creativity. At Winlancer, we believe that every company is awesome, and we strive to help thesecompanies uncover their awesomeness to an increasingly digital world, by invigorating them with the ‘WOW’ factor of Winlancer.</p>
+                <button>Read More</button>
+            </div>
+            <div id="image" class="bg">
+                <img src="img/image3.png">
+            </div>  
+        </section>
+    </div>
+    <div id="main2">
+        <section id="service_section">
+            <div id="service_header">
+                <h1>Service we offer</h1>
+                <h4>At Winlancer, We Take Business Centric Approach To All Our Customer’s Needs. We Look Beyond Technology To Examine User’s Motivations To Create A Remarkably Engaging Experience For Them.</h4>
+            </div>
+            <div id="container">
+                <div id="card1" class="card">
+                    <img class="card_icon" src="img/card1.png">
+                    <div class="card_div">UX Design</div>
+                    <p class="card_p">At Winlancer UX designers are primarily concerned with how the product feels. Winlancer UX designers explore many different approaches to solving a specific user problem. The broad responsibility of a UX designer is to ensure that the product</p>  
+                    <button class="card_btn">Read More</button>
+                </div>
+                <div id="card2" class="card ">
+                    <img class="card_icon" src="img/card2.png">
+                    <div class="card_div">UI Design</div>
+                    <p class="card_p">At Winlancer UI Designer are particular about how the product is laid out. They are in charge of designing each screen and ensure that the UI visually and maintain consistency in visual elements and defining behavior</p>  
+                    <button class="card_btn" style="color:#f68c09;">Read More</button>
+                </div>
+                <div id="card3" class="card">
+                    <img class="card_icon" src="img/card3.png">
+                    <div class="card_div">Mobile Application</div>
+                    <p class="card_p">Mobile App development is Hot Ballon on the Sky. Mobile app development such as Development process, mobile user interface (UI) design is also essential in the creation of mobile apps. Mobile UI considers constraints, contexts & screen</p>  
+                    <button class="card_btn" style="color: #08da4e;">Read More</button>
+                </div>
+                <div id="card4" class="card">
+                    <img class="card_icon" src="img/card4.png">
+                    <div class="card_div">Custamized Application</div>
+                    <p class="card_p">At Winlancer, We helps our clients to build and manage websites and web applications, Custom web development applications can interact with older systems to plugin and extend their life by years.</p>  
+                    <button class="card_btn" style="color: #e9222c;">Read More</button>
+                </div>
+                <div id="card5" class="card">
+                    <img class="card_icon" src="img/card5.png">
+                    <div class="card_div">Digital marketing</div>
+                    <p class="card_p">At Winlancer our Digital marketing team offers the prospect of increasing and improving the interactions and relationships with current and prospective customers through, for instance, social networking sites, instant messaging</p>  
+                    <button class="card_btn" style="color: #b50edf;">Read More</button>
+                </div>
+                <div id="card6" class="card">
+                    <img class="card_icon" src="img/card6.png">
+                    <div class="card_div">Enterprise Solutions</div>
+                    <p class="card_p">At Winlancer Team Provide Enterprise Solutions provide for a scalable, easy to manage programming solution to providing business management and information accessibility for internal and external clients. Enterprise solutions deal</p>  
+                    <button class="card_btn" style="color: #F51f9c;">Read More</button>
+                </div>
+                <div id="card7" class="card">
+                    <img class="card_icon" src="img/card7.png">
+                    <div class="card_div">Business Solution</div>
+                    <p class="card_p">At Winlancer Business Solutions comes in term of Enterprise solutions e.g. Manufacturing Industry, IT Industry, Travel Industry, Health Care, Finance Industry and solve their business problems.</p>  
+                    <button class="card_btn" style="color: #08da4e;">Read More</button>
+                </div>
+                <div id="card8" class="card">
+                    <img class="card_icon" src="img/card8.png">
+                    <div class="card_div">Technical Support</div>
+                    <p class="card_p">At Winlancer Technical support team are ready to troubleshoot your technical problems, doesn't matter what technologies it is involving. We've Industry Experts team who available to provide support any time, 24X7.</p>  
+                    <button class="card_btn" style="color:#f68c09 ;">Read More</button>
+                </div>
+            </div>
+            
+        </section>
+    </div>
 
-        </div>
-
-    </div> -->
-    
     <script src="index.js"></script>
 </body>
 </html>

@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body,html{
+    overflow-x: hidden;
+}
 #outer_div1{
     /* background: url(https://winlancers.com/assets/img/slide2.jpg) no-repeat center center/cover; */
     height: 100vh;
@@ -21,7 +24,7 @@
     /* border: 1px solid red; */
     width: 100%;
     height: 14vh;
-    padding: 10px 60px;
+    padding: 0 3vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,48 +34,52 @@
 }
 #list{
     /* border: 1px solid red; */
-    width: 40vw;
+    
     list-style: none;
     color: hsl(0, 0%, 100%);
     font-family: sans-serif;
-    font-size: 3vh;
+    font-size: 1.4vw;
     display: flex;
-    justify-content: space-around;
+    gap: 2vw;
 }
-#list li:hover{
+#nav i{
+    font-size: 1.6vw;
+    display: none;
+}
+/* #list li:hover{
     transition: all;
     transition-duration: .4s;
     color: rgb(234, 234, 87);
-}
+}  */
 /* nav bar is ended */
 
 
 #inner_div2
 {
     /* border: 2px solid red; */
-    height: 70vh;
+    height: 70%;
     width: 87%;
-    margin:4vh auto;
+    margin:2vw auto;
     font-family:sans-serif;
     display: flex;
     justify-content: space-between;
 }
 #text{
     /* border: 1px solid green; */
-    height:40vh;
-    width:63%;
+    height:53%;
+    width:65%;
     align-self: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 #text1{
    color: white; 
-   font-size: 7vh;
+   font-size: 3vw;
 }
 #text>div{
+    margin:19px 0px;
     color: hsl(0, 6%, 85%);
-    font-size: 3.9vh;
+    font-size: 1.6vw;
 }
 #text>button{
     height:7vh;
@@ -80,7 +87,7 @@
     background-color: #4154f1;
     border-radius: 5px;
     color: antiquewhite;
-    font-size: 2.3vh;
+    font-size: 1vw;
     letter-spacing: 1px;
     box-shadow:0.1px 0.1px 100px 0px #4154f1 ;
     border: none;
@@ -94,10 +101,10 @@
 
 /* this is the form */
 #form{
-    padding: 2vh 3vh;
+    padding: 1vw 2vw;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    width: 28%;
+    width: 25vw;
     height: 55vh;
     align-self: center;
     background-color: rgba(0,0,0,.4);
@@ -115,7 +122,7 @@
 input,textarea{
     background-color: rgba(0,0,0,.4);
     outline: none;
-    font-size: 2.4vh;
+    font-size: 1.1vw;
     font-family: sans-serif;
 }
 input,textarea:focus{
@@ -127,26 +134,26 @@ input,textarea:focus{
     width: 10vw;
     height: 7vh;
     border-radius: 7px;
-    padding: 1vh;
+    padding: 0.5vw;
 }
 .number{
     height: 7vh;
     width: 100%;
     border-radius: 7px;
-    padding: 1vh;
+    padding: 0.5vw;
 }
 textarea{
     width: 100%;
     max-width: 100%;
     max-height: 20vh;
     border-radius: 7px;
-    padding: 1vh;
+    padding: 0.5vw;
 }
 #form_btn{
     border-radius: 7px;
     height: 8vh;
     width:11vw;
-    font-size: 2.5vh;
+    font-size: 1.2vw;
     background-color: #FFC107;
     color: #fff;
     border: none;
@@ -210,14 +217,215 @@ textarea{
 }
 /* wave animation ended */
 
-#outer_div2{
+
+/* This is the main section which contains about,services & testimonial section */
+#main{
+    position: relative;
+    margin-top: -1%;
     border: 2px solid red;
     height:100vh;
-    width: 100%;
+    width: 100vw;
     background: white;
 }
-#main{
-    border: 2px solid green;
-    height: 80vh;
-    width: 80%;
+
+/* about section started */
+#about_section{
+    /* border: 2px solid green; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 75vh;
+    width: 90%; 
+    display: flex;
+    font-family: sans-serif;
 }
+.bg{
+    /* border: 1px solid blue; */
+    height: 100%;
+    width: 50%;
+}
+#content{
+    padding: 5vh;
+    background:  #f6f9ff;
+}
+#content>h2{
+    letter-spacing: 1px;
+    font-size: 1.6vw;
+    color: #000000;
+}
+#content>p{
+    margin: 2vh 0vh 4vh;
+    letter-spacing: 0.06vw;
+    font-size: 1.1vw;
+    color: #444444;
+}
+
+#image>img{
+    overflow: hidden;
+    height: 90vh;
+    width: 43vw;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* animation: move 4s infinite linear; */
+}
+@keyframes move {
+    0%, 100% {
+        transform: translateX(-20px);
+    }
+    40% {
+        transform: translateX(20px);
+    }
+    70% {
+        transform: translateX(-15px);
+    } 
+}
+
+#content>button{
+    height:7vh;
+    width: 11vw;
+    background-color: #4154f1;
+    border-radius: 5px;
+    color: antiquewhite;
+    font-size: 2.3vh;
+    letter-spacing: 1px;
+    border: none;
+    font-weight: 600;
+}
+/* ending of about section */
+
+/* staring of service section */
+#main2{
+    position: relative;
+    border: 2px solid green;
+    width: 100vw;
+    height: 160vh;
+    background: #f6f5f1;
+    font-family: sans-serif;
+}
+#service_section{
+    border: 1px solid yellow;
+    width: 87%;
+    height:85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    overflow-y: hidden;
+}
+#service_header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+#service_header>h1{
+    font-size:35px;
+    color: #012970;
+    margin-bottom: 30px;
+}
+
+/* container of cards */
+#container{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 17px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+#card1{
+    border-bottom:2.5px solid #2db6fa ;
+}
+#card2{
+    border-bottom:2.5px solid #f68c09 ;
+}
+#card3{
+    border-bottom:2.5px solid #08da4e ;
+}
+#card4{
+    border-bottom:2.5px solid #e9222c ;
+}
+#card5{
+    border-bottom:2.5px solid #b50edf ;
+}
+#card6{
+    border-bottom:2.5px solid #F51f9c;
+}
+#card7{
+    border-bottom:2.5px solid #08da4e;
+}
+#card8{
+    border-bottom:2.5px solid #f68c09;
+}
+.card{
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    padding: 10px;
+    height:370px;
+    width: 300px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 1px 1px 6px 1px rgb(109, 107, 107);
+}
+.card_icon{
+    height: 70px;
+    width: 67px;
+    margin-bottom: 15px;
+}
+.card_div{
+    color: #444444;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.card_p{
+    color: #444444;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.card_btn{
+    padding: 15px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 550;
+    color: #2db6fa;
+    border: none;
+}
+.card:hover{
+    transition: all 0.2s;
+    transform: scale(1.05);
+}
+@media (max-width:1023px){
+    #list li{display: none;}
+    #nav i{display: block;
+    font-size: 3vw;}
+    #outer_div1{
+        height: 140vh;
+    }
+    #inner_div2{
+        flex-direction: column;
+        height: 75%;
+    }
+    #text{
+        width: 85%;
+        height:40% ;
+        text-align: center;
+    }
+    #text1{font-size: 4.5vw;}
+    #text>div{font-size: 2.8vw;
+    margin:19px 0px;}
+    #text>button{
+        align-self: center;
+        height:7.5vh;
+        width: 17vw;
+        font-size: 1.4vw;
+    }
+    #form{width: 40vw;}
+    .name_email{width: 17vw;}
+    input,textarea{font-size: 1.5vw;}
+    #wave-animation{display: none;}
+
+    
+}
+
