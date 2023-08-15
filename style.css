@@ -404,7 +404,7 @@ textarea{
 
 /* start of welcome section which is inside main 3 */
 #main3{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 110vh;
     width: 100vw;
     background-color: #F9FDFE;
@@ -425,28 +425,63 @@ textarea{
     display: flex;
 }
 #welcome_section_container{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 100%;
     width: 60%;
-    display: flex;
+    display: flex;  
     flex-wrap: wrap;
     gap: 2vw;
 }
 .bx{
-    border: 1px solid teal;
+    /* border: 1px solid teal;  */
     width: 47%;
+    box-shadow: 1px 1px 6px 1px rgb(109, 107, 107);
+    border-radius: 15px;
+    transition: all;
+    transition-duration: 0.4s;
+}
+.bx:hover{
+    transform: scaleY(1.05);
+    background-color: #1168e3;
+}
+#welcome_section_container>#bx1,#bx2{
+    padding: 2vw;
+    height: 40%;
+}
+#welcome_section_container>#bx3,#bx4{
     height: 45%;
+    padding: 2vw;
+}
+.bx>h2{
+    color: #444444;
+    font-size: 1.6vw;
+    margin-bottom: 1vw;
+}
+.bx>p{
+    color: #444444;
+    font-size: 1.1vw;
 }
 #welcome_section_img{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 100%;
     width:40%;
 }
 #welcome_section_img>img{
     height: 55vh;
     width: 30vw;
+    animation: move 4s infinite linear;
 }
-
+@keyframes move {
+    0%, 100% {
+        transform: translateX(-20px);
+    }
+    40% {
+        transform: translateX(20px);
+    }
+    70% {
+        transform: translateX(-15px);
+    } 
+}
 
 
 
