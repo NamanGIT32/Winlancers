@@ -42,6 +42,7 @@ body,html{
     display: flex;
     gap: 2vw;
 }
+
 #nav i{
     font-size: 1.6vw;
     display: none;
@@ -86,6 +87,7 @@ body,html{
     width: 11vw;
     background-color: #4154f1;
     border-radius: 5px;
+    border-radius: 10px 100px / 120px;
     color: antiquewhite;
     font-size: 1vw;
     letter-spacing: 1px;
@@ -94,7 +96,7 @@ body,html{
     font-weight: 600;
 }    
 #text>button:hover{
-    transition: all;
+    transition-property:border-radius;
     transition-duration: 0.8s;
     border-radius: 2px;
 }
@@ -235,7 +237,7 @@ textarea{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    height: 75vh;
+    height: 75%;
     width: 90%; 
     display: flex;
     font-family: sans-serif;
@@ -246,8 +248,11 @@ textarea{
     width: 50%;
 }
 #content{
-    padding: 5vh;
+    border-radius: 20px;
+    padding: 2.5vw;
     background:  #f6f9ff;
+    display: flex;
+    flex-direction: column;
 }
 #content>h2{
     letter-spacing: 1px;
@@ -255,7 +260,7 @@ textarea{
     color: #000000;
 }
 #content>p{
-    margin: 2vh 0vh 4vh;
+    margin: 1vw 0vw 2vw;
     letter-spacing: 0.06vw;
     font-size: 1.1vw;
     color: #444444;
@@ -266,9 +271,9 @@ textarea{
     height: 90vh;
     width: 43vw;
     position: absolute;
-    top: 50%;
+    top: -10%;
     transform: translateY(-50%);
-    /* animation: move 4s infinite linear; */
+    animation: move 4s infinite linear;
 }
 @keyframes move {
     0%, 100% {
@@ -288,7 +293,7 @@ textarea{
     background-color: #4154f1;
     border-radius: 5px;
     color: antiquewhite;
-    font-size: 2.3vh;
+    font-size: 1.2vw;
     letter-spacing: 1px;
     border: none;
     font-weight: 600;
@@ -300,7 +305,7 @@ textarea{
     position: relative;
     border: 2px solid green;
     width: 100vw;
-    height: 160vh;
+    height: 170vh;
     background: #f6f5f1;
     font-family: sans-serif;
 }
@@ -332,7 +337,6 @@ textarea{
     align-items: center;
     gap: 17px;
     flex-wrap: wrap;
-    overflow: hidden;
 }
 #card1{
     border-bottom:2.5px solid #2db6fa ;
@@ -362,32 +366,32 @@ textarea{
     /* border: 2px solid black; */
     border-radius: 10px;
     padding: 10px;
-    height:370px;
-    width: 300px;
+    height:55vh;
+    width: 20vw;
     text-align: center;
     background-color: white;
     box-shadow: 1px 1px 6px 1px rgb(109, 107, 107);
 }
 .card_icon{
-    height: 70px;
-    width: 67px;
-    margin-bottom: 15px;
+    height:11vh ;
+    width:5vw ;
+    margin-bottom: 1vw;
 }
 .card_div{
     color: #444444;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 1vw;
 }
 .card_p{
     color: #444444;
-    font-size: 15px;
-    margin-bottom: 15px;
+    font-size: 1.1vw;
+    margin-bottom: 1vw;
 }
 .card_btn{
     padding: 15px;
     background-color: white;
-    font-size: 18px;
+    font-size: 1.3vw;
     font-weight: 550;
     color: #2db6fa;
     border: none;
@@ -396,6 +400,56 @@ textarea{
     transition: all 0.2s;
     transform: scale(1.05);
 }
+/* end of main2 section  */
+
+/* start of welcome section which is inside main 3 */
+#main3{
+    border: 1px solid black;
+    height: 110vh;
+    width: 100vw;
+    background-color: #F9FDFE;
+    padding: 60px 8vw;
+    font-family: sans-serif;
+    position: relative;
+}
+#main3>h1{
+    text-align: center;
+    font-size:2.5vw;
+    color: #012970;
+    margin-bottom: 40px;
+}
+#welcome_section{
+    /* border: 1px solid red; */
+    height: 85%;
+    width: 100%;
+    display: flex;
+}
+#welcome_section_container{
+    border: 1px solid black;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+.bx{
+    border: 1px solid teal;
+    width: 47%;
+    height: 45%;
+}
+#welcome_section_img{
+    border: 1px solid red;
+    height: 100%;
+    width:40%;
+}
+#welcome_section_img>img{
+    height: 55vh;
+    width: 30vw;
+}
+
+
+
+
 @media (max-width:1023px){
     #list li{display: none;}
     #nav i{display: block;
@@ -416,9 +470,9 @@ textarea{
     #text>div{font-size: 2.8vw;
     margin:19px 0px;}
     #text>button{
-        align-self: center;
-        height:7.5vh;
+        height: 10vh;
         width: 17vw;
+        align-self: center;
         font-size: 1.4vw;
     }
     #form{width: 40vw;}
@@ -426,6 +480,41 @@ textarea{
     input,textarea{font-size: 1.5vw;}
     #wave-animation{display: none;}
 
-    
+    /* starting of about section which is inside main  */
+    #main{
+        height: 200vh;
+    }
+    #about_section{
+        height:90%;
+        width: 75%;
+        flex-direction: column;
+    }
+    .bg{
+        width: 100%;
+    }
+    #about_section #content{
+        height: 50%;
+    }
+    #content>h2{font-size: 2.5vw;}
+    #content>p{font-size: 1.6vw;
+        margin: 1.4w 0vw 2.4vw;}
+    #content>button{
+        height:8.5vh;
+        width: 15vw;
+        font-size: 1.5vw;
+        align-self: center;
+    }
+    #image{position: relative;}
+    #image>img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 105vh;
+        width: 60vw;
+        animation: none;
+    }
+
+    /* starting of service section which is inside main2 */
 }
 

@@ -1,7 +1,8 @@
-let list=document.getElementsByClassName("list_items");
-console.log(list);
+// var list=document.querySelectorAll(".list_items");
+// list.forEach((item)=>{
+//     item.addEventListener("mouseover",()=>{
+//         item.style.color="red";
+//     })
+// })
 
-// function change(){
-//     list.style.color="red";
-// }
-
+// // 
