@@ -402,7 +402,7 @@ textarea{
 }
 /* end of main2 section  */
 
-/* start of welcome section which is inside main 3 */
+/* start of welcome section which is inside main3 */
 #main3{
     /* border: 1px solid black; */
     height: 110vh;
@@ -482,8 +482,90 @@ textarea{
         transform: translateX(-15px);
     } 
 }
+/* ending of welcome section */
 
-
+/* starting of footer section */
+#footer{
+    position: relative;
+    /* border: 1px solid lawngreen; */
+    height: 70vh;
+    width: 100vw;
+    font-family: sans-serif;
+}
+#footer_sec1{
+    background:white url(img/footer-bg.png ) no-repeat right top;
+    background-size: contain;   
+    height: 80%;
+    border-top: 1px solid #e1ecff;
+    border-bottom: 1px solid #e1ecff;
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+#footer_sec2{
+    height: calc(100% - 80%);
+    background-color: #f6f9ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1vw;
+}
+#sec1_container{
+    /* border: 1px solid indianred; */
+    height: 100%;
+    width: 87%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer_bx{
+    /* border: 1px solid blue; */
+    height: 100%;
+    padding: 1.5vw;
+}
+#foot_bx1{
+    width: 40%;
+}
+#foot_bx2,#foot_bx3{
+    width:17%;
+}
+#foot_bx4{
+    width: calc(100% - 74%);
+}
+#foot_bx1>img{
+    height: 12vh;
+    width: 15vw;
+    margin-bottom: 1.5vw;
+}
+#foot_bx1>p{
+    line-height: 1.4vw;
+    font-size: 0.9vw;
+    color: #444444;
+    letter-spacing: 0.02vw;
+}
+.footer_bx>h4{
+    font-size: 1.1vw;
+    color: #012970;
+    margin-bottom: 1.1vw;
+}
+.footer_bx ul li{
+    list-style: none;
+    color: #013289;
+    font-size: 1vw;
+    margin-bottom: 0.5vw;
+}
+.less{
+    color: #d0d4fc;
+}
+#foot_bx4>div{
+    color: #444444;
+    font-size: 1vw;
+}
+.phone{
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+}
+/* ending of footer section  */
 
 @media (max-width:1023px){
     #list li{display: none;}
@@ -552,4 +634,5 @@ textarea{
 
     /* starting of service section which is inside main2 */
 }
+
 
