@@ -7,8 +7,10 @@ body,html{
     overflow-x: hidden;
 }
 #outer_div1{
-    /* background: url(https://winlancers.com/assets/img/slide2.jpg) no-repeat center center/cover; */
     height: 100vh;
+    width: 100vw;
+    position: relative;
+    font-family:sans-serif;
 }
 #b_img{
     position: fixed;
@@ -23,7 +25,7 @@ body,html{
     top: 0;
     /* border: 1px solid red; */
     width: 100%;
-    height: 14vh;
+    height: 15%;
     padding: 0 3vw;
     display: flex;
     justify-content: space-between;
@@ -34,7 +36,6 @@ body,html{
 }
 #list{
     /* border: 1px solid red; */
-    
     list-style: none;
     color: hsl(0, 0%, 100%);
     font-family: sans-serif;
@@ -61,13 +62,12 @@ body,html{
     height: 70%;
     width: 87%;
     margin:2vw auto;
-    font-family:sans-serif;
     display: flex;
     justify-content: space-between;
 }
 #text{
     /* border: 1px solid green; */
-    height:53%;
+    height:56%;
     width:65%;
     align-self: center;
     display: flex;
@@ -78,36 +78,37 @@ body,html{
    font-size: 3vw;
 }
 #text>div{
-    margin:19px 0px;
+    margin:25px 0px;
     color: hsl(0, 6%, 85%);
     font-size: 1.6vw;
 }
 #text>button{
-    height:7vh;
-    width: 11vw;
+    height:50px;
+    width: 170px;
     background-color: #4154f1;
-    border-radius: 5px;
-    border-radius: 10px 100px / 120px;
+    border-radius: 8px;
     color: antiquewhite;
-    font-size: 1vw;
+    font-size: 13px;
     letter-spacing: 1px;
     box-shadow:0.1px 0.1px 100px 0px #4154f1 ;
     border: none;
     font-weight: 600;
-}    
-#text>button:hover{
     transition-property:border-radius;
     transition-duration: 0.8s;
+}    
+#text>button:hover{
     border-radius: 2px;
 }
 
 /* this is the form */
 #form{
+    position: relative;
+    /* border: 1px solid brown; */
     padding: 1vw 2vw;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    width: 25vw;
-    height: 55vh;
+    width: 30%;
+    height: 80%;
     align-self: center;
     background-color: rgba(0,0,0,.4);
     display: flex;
@@ -133,13 +134,13 @@ input,textarea:focus{
     font-family: sans-serif;
 }
 .name_email{
-    width: 10vw;
-    height: 7vh;
+    width: 47%;
+    height: 120%;
     border-radius: 7px;
     padding: 0.5vw;
 }
 .number{
-    height: 7vh;
+    height: 13%;
     width: 100%;
     border-radius: 7px;
     padding: 0.5vw;
@@ -147,14 +148,14 @@ input,textarea:focus{
 textarea{
     width: 100%;
     max-width: 100%;
-    max-height: 20vh;
+    max-height: 45%;
     border-radius: 7px;
     padding: 0.5vw;
 }
 #form_btn{
     border-radius: 7px;
-    height: 8vh;
-    width:11vw;
+    height:13%;
+    width:100%;
     font-size: 1.2vw;
     background-color: #FFC107;
     color: #fff;
@@ -220,7 +221,7 @@ textarea{
 /* wave animation ended */
 
 
-/* This is the main section which contains about,services & testimonial section */
+/* This is the main section which contains about section */
 #main{
     position: relative;
     margin-top: -1%;
@@ -232,7 +233,7 @@ textarea{
 
 /* about section started */
 #about_section{
-    /* border: 2px solid green; */
+    border: 2px solid green;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -248,18 +249,28 @@ textarea{
     width: 50%;
 }
 #content{
+    position: relative;
     border-radius: 20px;
     padding: 2.5vw;
     background:  #f6f9ff;
     display: flex;
     flex-direction: column;
 }
-#content>h2{
+#zero{
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#zero>h2{
     letter-spacing: 1px;
     font-size: 1.6vw;
     color: #000000;
 }
-#content>p{
+#zero>p{
     margin: 1vw 0vw 2vw;
     letter-spacing: 0.06vw;
     font-size: 1.1vw;
@@ -287,9 +298,9 @@ textarea{
     } 
 }
 
-#content>button{
-    height:7vh;
-    width: 11vw;
+#zero>button{
+    height:10%;
+    width: 30%;
     background-color: #4154f1;
     border-radius: 5px;
     color: antiquewhite;
@@ -572,7 +583,7 @@ textarea{
     #nav i{display: block;
     font-size: 3vw;}
     #outer_div1{
-        height: 140vh;
+        height: 150vh;
     }
     #inner_div2{
         flex-direction: column;
@@ -580,21 +591,25 @@ textarea{
     }
     #text{
         width: 85%;
-        height:40% ;
+        height:40%;
         text-align: center;
     }
-    #text1{font-size: 4.5vw;}
-    #text>div{font-size: 2.8vw;
+    #text1{font-size: 4vw;}
+    #text>div{font-size: 2.3vw;
     margin:19px 0px;}
     #text>button{
-        height: 10vh;
-        width: 17vw;
+        height: 40px;
+        width: 170px;
         align-self: center;
-        font-size: 1.4vw;
+        font-size: 1.3vw;
     }
-    #form{width: 40vw;}
-    .name_email{width: 17vw;}
+    #form{width: 50%;
+        height: 50%;
+    }
+    .name_email{width: 48%;
+    }
     input,textarea{font-size: 1.5vw;}
+    #form_btn{font-size: 1.6vw;}
     #wave-animation{display: none;}
 
     /* starting of about section which is inside main  */
@@ -633,6 +648,11 @@ textarea{
     }
 
     /* starting of service section which is inside main2 */
+}
+@media (max-width:1250px){
+    #main{
+        height: 150vh;
+    }
 }
 
 
