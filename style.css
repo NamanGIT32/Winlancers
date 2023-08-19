@@ -43,16 +43,19 @@ body,html{
     display: flex;
     gap: 2vw;
 }
+#list li{
+    transition: color;
+    transition-duration: .4s;
+}
 
 #nav i{
     font-size: 1.6vw;
     display: none;
 }
-/* #list li:hover{
-    transition: all;
-    transition-duration: .4s;
+#list li:hover{
+    
     color: rgb(234, 234, 87);
-}  */
+} 
 /* nav bar is ended */
 
 
@@ -225,7 +228,7 @@ textarea{
 #main{
     position: relative;
     margin-top: -1%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height:100vh;
     width: 100vw;
     background: white;
@@ -233,7 +236,7 @@ textarea{
 
 /* about section started */
 #about_section{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     position: absolute;
     left: 50%;
     top: 50%;
@@ -257,11 +260,11 @@ textarea{
     flex-direction: column;
 }
 #zero{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 100%;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: center;
 
 }
@@ -299,8 +302,8 @@ textarea{
 }
 
 #zero>button{
-    height:10%;
-    width: 30%;
+    height: 3rem;
+    width: 10rem;
     background-color: #4154f1;
     border-radius: 5px;
     color: antiquewhite;
@@ -561,7 +564,7 @@ textarea{
 }
 .footer_bx ul li{
     list-style: none;
-    color: #013289;
+    color: #013289; 
     font-size: 1vw;
     margin-bottom: 0.5vw;
 }
@@ -614,23 +617,30 @@ textarea{
 
     /* starting of about section which is inside main  */
     #main{
-        height: 200vh;
+        height: 210vh;
     }
     #about_section{
         height:90%;
-        width: 75%;
+        width: 87%;
         flex-direction: column;
     }
     .bg{
         width: 100%;
     }
-    #about_section #content{
+    #content{
         height: 50%;
     }
-    #content>h2{font-size: 2.5vw;}
-    #content>p{font-size: 1.6vw;
-        margin: 1.4w 0vw 2.4vw;}
-    #content>button{
+    #image{
+        height: 50%;
+    }
+    #image>img{
+        height: 100%;
+        width: 60%;
+    }
+    #zero>h2{font-size: 3vw;}
+    #zero>p{font-size: 2vw;
+        margin: 1.4vw 0vw 2.4vw;}
+    #zero>button{
         height:8.5vh;
         width: 15vw;
         font-size: 1.5vw;
@@ -641,17 +651,73 @@ textarea{
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
-        height: 105vh;
-        width: 60vw;
+        transform: translateX(-50%);
+        /* height: 105vh;
+        width: 60vw; */
         animation: none;
     }
-
-    /* starting of service section which is inside main2 */
+    
+    /* starting of welcome section which is inside main3 */
+    #main3{
+        height: 170vh;
+    }
+    #welcome_section{
+        height: 90%;
+        flex-direction: column;
+    }
+    #welcome_section_container{
+        width: 100%;
+    }
+    #welcome_section_container h2{
+        font-size: 2vw;
+    }
+    #welcome_section_container p{
+        font-size:1.4vw;
+    }
+    #welcome_section_img{
+        align-self: center;
+        width:50%;
+    }
+    #welcome_section_img>img{
+        width: 85%;
+        height: 100%;
+    }
+    @keyframes move {
+    0%, 100% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(60px);
+    }
+}
 }
 @media (max-width:1250px){
     #main{
-        height: 150vh;
+        height: 170vh;
+    }
+    #about_section{
+        height: 90%;
+        flex-direction: column;
+    }
+    #content{
+        width: 100%;
+    }
+    #zero>h2{
+        font-size: 2.2vw;
+    }
+    #zero>p{
+        font-size: 1.3vw;
+    }
+    #zero>button{
+        height: 3rem;
+        width: 10rem;       
+    }
+    #image{
+        align-self: center;
+    }
+    #image>img{
+        position: relative;
+        top: 0;
     }
 }
 
