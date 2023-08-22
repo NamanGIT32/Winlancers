@@ -317,14 +317,14 @@ textarea{
 /* staring of service section */
 #main2{
     position: relative;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width: 100vw;
     height: 170vh;
     background: #f6f5f1;
     font-family: sans-serif;
 }
 #service_section{
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     width: 87%;
     height:85%;
     position: absolute;
